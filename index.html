@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard</title>
+</head>
+<body>
+<div id="flashcard">
+    <div id="question">
+        <h2>Pergunta</h2>
+        <p id="question-text">Qual o maior suicidio coletivo do mundo?</p>
+    </div>
+    <div id="answer" style="display: none;">
+        <h2>Resposta</h2>
+        <p id="answer-text">Jonestown</p>
+    </div>
+    <button id="toggle-button">Mostrar Resposta</button>
+</div>
+
+<script>
+
+    const toggleButton = document.getElementById('toggle-button');
+    const answer = document.getElementById('answer');
+    const question = document.getElementById('question');
+
+    toggleButton.addEventListener('click', () => {
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            question.style.display = 'none';
+            toggleButton.textContent = 'Mostrar Pergunta';
+        } else {
+            answer.style.display = 'none';
+            question.style.display = 'block';
+            toggleButton.textContent = 'Mostrar Resposta';
+        }
+    });
+</script>
+
+</body>
+</html>
+<body>
+    <main>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+</body>
