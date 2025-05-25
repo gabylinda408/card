@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Flashcard</title>
 </head>
 <body>
-<div id="flashcard">
-    <div id="question">
-        <h2>Pergunta</h2>
-        <p id="question-text">Qual o maior suicidio coletivo do mundo?</p>
-    </div>
-    <div id="answer" style="display: none;">
-        <h2>Resposta</h2>
-        <p id="answer-text">Jonestown</p>
-    </div>
-    <button id="toggle-button">Mostrar Resposta</button>
-</div>
-
-<script>
-
-    const toggleButton = document.getElementById('toggle-button');
-    const answer = document.getElementById('answer');
-    const question = document.getElementById('question');
-
-    toggleButton.addEventListener('click', () => {
-        if (answer.style.display === 'none') {
-            answer.style.display = 'block';
-            question.style.display = 'none';
-            toggleButton.textContent = 'Mostrar Pergunta';
-        } else {
-            answer.style.display = 'none';
-            question.style.display = 'block';
-            toggleButton.textContent = 'Mostrar Resposta';
-        }
-    });
-</script>
-
-</body>
-</html>
-<body>
     <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Curiosidade</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        Qual foi o maior suicidio coletivo da história?
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        Jonestown, na Guiana, em 1978.
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Curiosidade</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        O que foi a Familia Manson?
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        Um culto liderado por Charles Manson, que cometeu assassinatos em 1969.
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
     </footer>
 </body>
+</html>
