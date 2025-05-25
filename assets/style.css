@@ -1,28 +1,35 @@
+:root {
+    --text-color: #c7d4e4;
+    --card-front-color: #144480;
+    --card-back-color: #a2c1dd;
+}
+
 body {
-    background-color: rgb(89, 140, 170);
+    background: url('img/images.png');
     font-family: Bai Jamjuree;
 }
 
 #container {
-    display: flex; /* Elementos dispostos em linha */
+    display: flex; 
 }
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: rgb(68, 94, 94);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
 
 .cartao__conteudo {
+    background-color: var(--card-front-color);
     text-align: center;
     /* background-color: aquamarine; */
     height: 100%;
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(104, 118, 138);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -36,11 +43,15 @@ body {
     padding: 2rem;
 }
 
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
 
-
-
-
-
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
 
 footer {
     background-color: black;
