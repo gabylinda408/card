@@ -14,4 +14,10 @@ criaCartao(
     'História',
    'Qual foi o maior imperador do mundo?',
     'O maior imperador do mundo foi Genghis Khan, que fundou o Império Mongol no século XIII, o maior império contíguo da história, abrangendo vastas áreas da Ásia e Europa.'
+
 )
+criaCartao(
+    'Seitas',
+    'Quem foi o líder da seita Heaven’s Gate?',
+    'O líder da seita Heaven’s Gate foi Marshall Applewhite, que acreditava que a Terra estava prestes a ser destruída e que seus seguidores precisavam deixar seus corpos físicos para alcançar um nível superior de existência.'
+) 
