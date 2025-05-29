@@ -48,6 +48,6 @@ criaCartao(
 )
 criaCartao(
     'Seitas',
-    'Quem foi Chasles Manson?',
+    'Quem foi Charles Manson?',
     'Charles Manson foi o líder de uma seita conhecida como "Família Manson", que ficou infame por seus assassinatos de celebridades e outros crimes nos anos 60, incluindo o assassinato de Sharon Tate e outros em 1969.'
 )
